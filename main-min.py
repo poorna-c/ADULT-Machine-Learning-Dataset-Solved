@@ -12,7 +12,7 @@ col_names = ["Age","Workclass","fnlwgt","education","education-num","marital-sta
             "race","sex","capital-gain","capital-loss","hours-per-week",
              "native-country","Class"]
 
-df = pd.read_csv('/home/poornachand/adult_dataset/adult.data',names=col_names)
+df = pd.read_csv('data/adult.data',names=col_names)
 df.drop(["native-country","relationship"],axis=1,inplace=True)
 
 df["Workclass"] = df["Workclass"].map({' Private':1, ' Self-emp-not-inc':2, ' Local-gov':3, ' ?':9, ' State-gov':4,
