@@ -9,15 +9,15 @@ from sklearn.decomposition import PCA
 import cv2
 
 
-img = cv2.imread(r'/home/poornachand/Pictures/data.png',cv2.IMREAD_GRAYSCALE)
+img = cv2.imread(r'data/data.png',cv2.IMREAD_GRAYSCALE)
 plt.imshow(img,cmap = plt.cm.binary_r)
 plt.title("This is the first 5 rows of our raw Data...")
 plt.show()
-img = cv2.imread(r'/home/poornachand/Pictures/data2.png',cv2.IMREAD_GRAYSCALE)
+img = cv2.imread(r'data/data2.png',cv2.IMREAD_GRAYSCALE)
 plt.imshow(img,cmap = plt.cm.binary_r)
 plt.title("This is the first 5 rows of our Data after preprocessing...\nAll the Strings are converted to Numbers to directly feed our Model..")
 plt.show()
-img = cv2.imread(r'/home/poornachand/Pictures/data3.png',cv2.IMREAD_GRAYSCALE)
+img = cv2.imread(r'data/data3.png',cv2.IMREAD_GRAYSCALE)
 plt.imshow(img,cmap = plt.cm.binary_r)
 plt.title("This is the first 5 rows of our Data After Dimentionality reduction using PCA...")
 plt.show()
@@ -51,7 +51,7 @@ col_names = ["Age","Workclass","fnlwgt","education","education-num","marital-sta
             "race","sex","capital-gain","capital-loss","hours-per-week",
              "native-country","Class"]
 
-df = pd.read_csv('/home/poornachand/adult_dataset/adult.data',names=col_names)
+df = pd.read_csv('data/adult.data',names=col_names)
 df.drop(["native-country","relationship"],axis=1,inplace=True)
 
 
