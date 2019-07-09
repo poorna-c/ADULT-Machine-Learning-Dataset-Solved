@@ -1,5 +1,12 @@
-## ADULT-Machine-Learning-Dataset-Solved-100-Acc
+## ADULT-Machine-Learning-Dataset-Solved
 ADULT Dataset (https://archive.ics.uci.edu/ml/datasets/Adult) Solved by projecting into higher dimentions with 100% Accuracy
+
+#### Requirements:
+1) Python3 - sudo apt-get install python3
+2) Pandas - pip3 install pandas
+3) Numpy - pip3 install numpy
+4) Matplotlib - pip3 install matplotlib
+5) Sklearn - pip3 install sklearn
 
 Steps:
 1) Reading the Data and loading into memory
